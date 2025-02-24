@@ -37,9 +37,11 @@ const Navbar = () => {
                 <a>Student Registation Form</a>
               </li>
             </Link>
+            <Link to="/Users">
             <li>
               <a>Student List</a>
             </li>
+            </Link>
           </ul>
         </div>
       </div>
