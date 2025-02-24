@@ -1,20 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Navbar from './component/Navbar'
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import Footer from './component/Footer'
+import Form from './pages/Form'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-   <h1 class="text-3xl font-bold underline text-red-600">
-    Hello world!
-  </h1>
+    <div>
+      <Navbar />
 
-  
-  
-    </>
+      <Routes>
+        <Route path="/Home" element={<HomePage />} />
+        <Route path="/Form" element={<Form />} />
+      </Routes>
+
+      <Footer />
+      
+    </div>
   )
 }
 
