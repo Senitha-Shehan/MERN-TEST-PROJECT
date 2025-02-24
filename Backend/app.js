@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use('/users',Router);
 
-console.log("HEY");
+console.log("HEY WELCOME !");
 
 // Connect to MongoDB (Remove deprecated options)
 mongoose.connect(process.env.MONGO_URI)
