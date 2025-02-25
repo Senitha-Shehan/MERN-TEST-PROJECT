@@ -3,7 +3,8 @@ import Navbar from './component/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import Footer from './component/Footer'
-import Form from './pages/Form'
+import UserDetails from './component/UserDetails/UserDetails'
+import AddUser from './component/AddUser/AddUser'
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
 
       <Routes>
         <Route path="/Home" element={<HomePage />} />
-        <Route path="/Form" element={<Form />} />
+        <Route path="/UserDetails" element={<UserDetails />} />
+        <Route path="/AddUser" element={<AddUser />} />
       </Routes>
 
       <Footer />
