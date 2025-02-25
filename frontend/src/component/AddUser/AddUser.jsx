@@ -30,47 +30,47 @@ const AddUser = () => {
     };
 
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gray-100">
-            <div className="card w-96 bg-white shadow-xl p-6">
-                <h2 className="text-2xl font-bold mb-4 text-center">Add User</h2>
+        <div className="flex justify-center items-center min-h-screen bg-gray-900">
+            <div className="card w-96 bg-gray-800 shadow-xl p-6 rounded-lg">
+                <h2 className="text-2xl font-bold mb-4 text-center text-white">Add User</h2>
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
-                        <label className="label">Name</label>
+                        <label className="label text-gray-300">Name</label>
                         <input
                             type="text"
                             name="name"
                             value={inputs.name}
                             onChange={handleChange}
-                            className="input input-bordered w-full"
+                            className="input input-bordered input-primary w-full bg-gray-700 text-white"
                             placeholder="Enter Name"
                             required
                         />
                     </div>
                     <div>
-                        <label className="label">Age</label>
+                        <label className="label text-gray-300">Age</label>
                         <input
                             type="number"
                             name="age"
                             value={inputs.age}
                             onChange={handleChange}
-                            className="input input-bordered w-full"
+                            className="input input-bordered input-primary w-full bg-gray-700 text-white"
                             placeholder="Enter Age"
                             required
                         />
                     </div>
                     <div>
-                        <label className="label">Email</label>
+                        <label className="label text-gray-300">Email</label>
                         <input
                             type="email"
                             name="email"
                             value={inputs.email}
                             onChange={handleChange}
-                            className="input input-bordered w-full"
+                            className="input input-bordered input-primary w-full bg-gray-700 text-white"
                             placeholder="Enter Email"
                             required
                         />
                     </div>
-                    <button type="submit" className="btn btn-primary w-full">Add User</button>
+                    <button type="submit" className="btn btn-accent w-full">Add User</button>
                 </form>
                 <button onClick={() => navigate("/")} className="btn btn-secondary mt-4 w-full">
                     Cancel
