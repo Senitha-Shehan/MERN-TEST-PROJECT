@@ -32,12 +32,12 @@ const Navbar = () => {
                 <a>Homepage</a>
               </li>
             </Link>
-            <Link to="/Form">
+            <Link to="/AddUser">
               <li>
                 <a>Student Registation Form</a>
               </li>
             </Link>
-            <Link to="/Users">
+            <Link to="/UserDetails">
             <li>
               <a>Student List</a>
             </li>
